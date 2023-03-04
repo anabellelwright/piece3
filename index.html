@@ -1,5 +1,6 @@
 <style>
 
+ 
 
 #typewriter {
   position: relative;
@@ -43,8 +44,8 @@
   <div id="typewriter">
   <h1></h1>
 	</div>
-  
-  
+
+
   <script>
   
   const typewriter = document.querySelector("#typewriter h1");
@@ -85,6 +86,21 @@
   
   
   <script>   
+    
+  var button = document.createElement('button');
+  button.innerHTML = 'Play Audio';
+  button.style.position = 'absolute';
+  button.style.top = '450px';
+  button.style.left = '159px';
+  document.body.appendChild(button);
+    
+  var button2 = document.createElement('button');
+  button2.innerHTML = 'Play Audio';
+  button2.style.position = 'absolute';
+  button2.style.top = '450px';
+  button2.style.left = '659px';
+  document.body.appendChild(button2);
+    
   var brain = document.createElement('img');
   brain.src = 'memories.gif'
   brain.style.position = 'absolute';
@@ -116,26 +132,6 @@
   text.style.color = 'white'; 
   text.style.fontStyle = 'italic';
   document.body.appendChild(text);
-    
-  var quote1 = document.createElement('div')
-  quote1.innerHTML = '"No one was really listening"'
-  quote1.style.fontFamily = 'Radikal'
-  quote1.style.position = 'absolute';
-  quote1.style.top = '520px';
-  quote1.style.left = '100px';
-  quote1.style.color = 'white'; 
-  quote1.style.whiteSpace = 'pre-wrap';
-  document.body.appendChild(quote1);
-    
-  var quote2 = document.createElement('div')
- 	quote2.innerHTML = '"These modern hospitals, man. They treat you right"'
-  quote2.style.fontFamily = 'Radikal'
-  quote2.style.position = 'absolute';
-  quote2.style.top = '520px';
-  quote2.style.left = '495px';
-  quote2.style.color = 'white'; 
-  quote2.style.whiteSpace = 'pre-wrap';
-  document.body.appendChild(quote2);
     
   var box2 = document.createElement('div');
   box2.style.width = '100px';
