@@ -117,13 +117,33 @@
   text.style.fontStyle = 'italic';
   document.body.appendChild(text);
     
+  var quote1 = document.createElement('div')
+  quote1.innerHTML = '"No one was really listening"'
+  quote1.style.fontFamily = 'Radikal'
+  quote1.style.position = 'absolute';
+  quote1.style.top = '520px';
+  quote1.style.left = '100px';
+  quote1.style.color = 'white'; 
+  quote1.style.whiteSpace = 'pre-wrap';
+  document.body.appendChild(quote1);
+    
+  var quote2 = document.createElement('div')
+ 	quote2.innerHTML = '"These modern hospitals, man. They treat you right"'
+  quote2.style.fontFamily = 'Radikal'
+  quote2.style.position = 'absolute';
+  quote2.style.top = '520px';
+  quote2.style.left = '495px';
+  quote2.style.color = 'white'; 
+  quote2.style.whiteSpace = 'pre-wrap';
+  document.body.appendChild(quote2);
+    
   var box2 = document.createElement('div');
   box2.style.width = '100px';
   box2.style.height = '100px';
   box2.style.backgroundColor = 'blue';
   box2.style.position = 'absolute';
   box2.style.top = '320px';
-  box2.style.left = '550px';
+  box2.style.left = '650px';
   document.body.appendChild(box2);
     
   var text2 = document.createElement('div');
@@ -131,10 +151,17 @@
   text2.style.fontFamily = 'Radikal'
   text2.style.position = 'absolute';
   text2.style.top = '295px';
-  text2.style.left = '571px';
+  text2.style.left = '670px';
   text2.style.color = 'white'; 
   document.body.appendChild(text2);
     
+  var glow = document.createElement('script');
+  glow.src = 'https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js';
+  document.body.appendChild(glow);
+    
+  
+    
+
   
   
 </script>
