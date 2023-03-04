@@ -1,13 +1,86 @@
+<style>
+#typewriter h1 {
+  color: white; 
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: .15em;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+
+
+</style>
+
+
+
+
 <body>
+<!--   <div id="typewriter">
+  <h1>slow, unconscious</h1>
+	</div> -->
+  
+  <div id="typewriter">
+  <h1></h1>
+	</div>
+  
+  
   <script>
+  
+  const typewriter = document.querySelector("#typewriter h1");
+  const texts = ["Hello, world!", "This is a typewriter effect.", "It restarts with new text."];
+  let index = 0;
+  let charIndex = 0;
+
+  function type() {
+    if (charIndex < texts[index].length) {
+      typewriter.textContent += texts[index].charAt(charIndex);
+      charIndex++;
+      setTimeout(type, 100);
+    } else {
+      setTimeout(erase, 1000);
+    }
+  }
+
+  function erase() {
+    if (charIndex > 0) {
+      typewriter.textContent = texts[index].substring(0, charIndex - 1);
+      charIndex--;
+      setTimeout(erase, 50);
+    } else {
+      index++;
+      if (index >= texts.length) {
+        index = 0;
+      }
+      setTimeout(type, 500);
+    }
+  }
+
+  type();
+
+  
+  
+  </script>
+  
+  
+  
+  <script>   
   var brain = document.createElement('img');
   brain.src = 'memories.gif'
   brain.style.position = 'absolute';
-	brain.style.left = '325px';
-	brain.style.top = '60%';
+	brain.style.left = '268px';
+	brain.style.top = '47%';
 	brain.style.marginTop = '-290px';
-  brain.style.width = '140px';
-  brain.style.height = '120px';
+  brain.style.width = '240px';
+  brain.style.height = '220px';
   brain.style.backgroundColor = 'transparent';
   document.body.appendChild(brain); 
   document.body.style.backgroundColor = 'black';
@@ -47,8 +120,11 @@
   text2.style.left = '573px';
   text2.style.color = 'white'; 
   document.body.appendChild(text2);
-
+    
+  
   
 </script>
   
+
+
 </body>
