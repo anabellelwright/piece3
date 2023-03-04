@@ -1,9 +1,20 @@
 <style>
+
+
+#typewriter {
+  position: relative;
+  top: 135px;
+  left: 510px;
+}
+  
+  
 #typewriter h1 {
   color: white; 
+  font-family: GHORA trial;
   overflow: hidden;
   white-space: nowrap;
   letter-spacing: .15em;
+
 }
 
 @keyframes typing {
@@ -36,7 +47,7 @@
   <script>
   
   const typewriter = document.querySelector("#typewriter h1");
-  const texts = ["Hello, world!", "This is a typewriter effect.", "It restarts with new text."];
+  const texts = ["Fast", "Subconscious", "Automatic", "Error Prone"];
   let index = 0;
   let charIndex = 0;
 
@@ -98,8 +109,9 @@
   var text = document.createElement('div');
   text.innerHTML = 'Patient?';
   text.style.position = 'absolute';
+  text.style.fontFamily = 'Radikal'
   text.style.top = '295px';
-  text.style.left = '173px';
+  text.style.left = '168px';
   text.style.color = 'white'; 
   text.style.fontStyle = 'italic';
   document.body.appendChild(text);
@@ -115,6 +127,7 @@
     
   var text2 = document.createElement('div');
   text2.innerHTML = 'Patient';
+  text2.style.fontFamily = 'Radikal'
   text2.style.position = 'absolute';
   text2.style.top = '295px';
   text2.style.left = '573px';
