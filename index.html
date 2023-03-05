@@ -92,6 +92,18 @@
   button.style.position = 'absolute';
   button.style.top = '450px';
   button.style.left = '159px';
+  
+  var audio1 = document.createElement('audio');
+	audio1.src = 'SerenaBirth.mp3';
+	audio1.style.display = 'none';
+  document.body.appendChild(audio1);
+		button.onclick = function() {
+  	if (audio1.paused) {
+    audio1.play();
+  	} else {
+    audio1.pause();
+  }
+	};
   document.body.appendChild(button);
     
   var button2 = document.createElement('button');
