@@ -99,6 +99,17 @@
   button2.style.position = 'absolute';
   button2.style.top = '450px';
   button2.style.left = '659px';
+  var audio = document.createElement('audio');
+	audio.src = 'KristenBirth.mp3';
+	audio.style.display = 'none';
+  document.body.appendChild(audio);
+		button2.onclick = function() {
+  	if (audio.paused) {
+    audio.play();
+  	} else {
+    audio.pause();
+  }
+	};
   document.body.appendChild(button2);
     
   var brain = document.createElement('img');
