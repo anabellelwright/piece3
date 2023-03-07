@@ -49,7 +49,7 @@
   <script>
   
   const typewriter = document.querySelector("#typewriter h1");
-  const texts = ["Fast", "Subconscious", "Automatic","Associative","BIAS"];
+  const texts = ["Fast", "Subconscious", "Automatic","Associative","IMPLICIT BIAS"];
   let index = 0;
   let charIndex = 0;
 
@@ -173,6 +173,15 @@
   text2.style.left = '670px';
   text2.style.color = 'white'; 
   document.body.appendChild(text2);
+    
+  var text3 = document.createElement('p')
+  text3.innterHTML = 'System 1 Thinking';
+  text3.style.fontFamily = 'Radikal'
+  text3.style.position = 'absolute';
+  text3.style.top = '150px';
+  text3.style.left = '670px';
+  text3.style.color = 'white'; 
+  document.body.appendChild(text3);
     
   var glow = document.createElement('script');
   glow.src = 'https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js';
