@@ -125,6 +125,12 @@
   }
 	};
   document.body.appendChild(button2);
+  
+  var video = document.createElement('video');
+	video.src = 'MyMind.mov';
+	video.autoplay = true;
+	video.loop = true;
+	video.style.display = 'none';
     
   var brain = document.createElement('img');
   brain.src = 'memories.gif'
@@ -135,8 +141,13 @@
   brain.style.width = '240px';
   brain.style.height = '220px';
   brain.style.backgroundColor = 'transparent';
-  document.body.appendChild(brain); 
+  document.body.appendChild(brain);
   document.body.style.backgroundColor = 'black';
+  brain.onclick = function () {
+  video.style.display = 'block';
+	}
+	document.body.appendChild(brain);	
+ 
     
     
   var box1 = document.createElement('img');
@@ -154,7 +165,7 @@
   text.style.position = 'absolute';
   text.style.fontFamily = 'Radikal'
   text.style.fontSize = '29px';
-  text.style.top = '278px';
+  text.style.top = '273px';
   text.style.left = '230px';
   text.style.color = 'red'; 
   text.style.fontStyle = 'italic';
@@ -187,16 +198,13 @@
   text2.style.fontFamily = 'Radikal'
   text2.style.position = 'absolute';
   text2.style.fontSize = '29px';
-	text2.style.top = '278px';
+	text2.style.top = '273px';
   text2.style.left = '755px';
-  text2.style.color = 'white'; 
+  text2.style.color = 'green'; 
   document.body.appendChild(text2);
     
 
-    
-  var glow = document.createElement('script');
-  glow.src = 'https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js';
-  document.body.appendChild(glow);
+  
     
   
     
