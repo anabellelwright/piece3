@@ -36,18 +36,16 @@
 
 
 <body>
-<!--   <div id="typewriter">
-  <h1>slow, unconscious</h1>
-	</div> -->
+  
+  
   
   <div id="typewriter">
   <h1></h1>
 	</div>
-
+	
 
   <script>
-    
-  
+
   const typewriter = document.querySelector("#typewriter h1");
   const texts = ["Fast", "Subconscious", "Automatic","Associative","IMPLICIT BIAS"];
   let index = 0;
@@ -86,8 +84,11 @@
   
   
   <script>   
-    
-  var button = document.createElement('button');
+  var video = document.createElement('video');
+  video.src = 'MyMind.mov';
+  
+  
+	var button = document.createElement('button');
   button.innerHTML = 'Play Audio';
   button.style.position = 'absolute';
   button.style.top = '610px';
@@ -143,11 +144,15 @@
   brain.style.backgroundColor = 'transparent';
   document.body.appendChild(brain);
   document.body.style.backgroundColor = 'black';
-  brain.onclick = function () {
-  video.style.display = 'block';
-	}
 	document.body.appendChild(brain);	
- 
+    brain.addEventListener("click", function() {
+    var video = document.createElement("video");
+    video.style.display = "block";
+    video.controls = true;
+    video.src = "MyMind.mov";
+    document.body.appendChild(video);
+    video.play();
+  });
     
     
   var box1 = document.createElement('img');
@@ -213,6 +218,5 @@
   
 </script>
   
-
 
 </body>
