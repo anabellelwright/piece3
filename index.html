@@ -1,6 +1,5 @@
 <style>
 
- 
 
 #typewriter {
   position: relative;
@@ -47,6 +46,7 @@
 
 
   <script>
+    
   
   const typewriter = document.querySelector("#typewriter h1");
   const texts = ["Fast", "Subconscious", "Automatic","Associative","IMPLICIT BIAS"];
@@ -90,8 +90,8 @@
   var button = document.createElement('button');
   button.innerHTML = 'Play Audio';
   button.style.position = 'absolute';
-  button.style.top = '450px';
-  button.style.left = '159px';
+  button.style.top = '610px';
+  button.style.left = '246px';
   
   var audio1 = document.createElement('audio');
 	audio1.src = 'SerenaBirth.mp3';
@@ -157,6 +157,18 @@
   text.style.color = 'white'; 
   text.style.fontStyle = 'italic';
   document.body.appendChild(text);
+  
+  var text4 = document.createElement('p');
+  text4.innerHTML = 'System 1 Thinking <br>The process of being in automatic pilot, of fast thinking, for much of your life, leaves you susceptible to unconscious biases. This is unavoidable so the best you can do is identify likely biases, try to interrupt them, and organise processes or systems to mitigate them.</br>';
+  text4.style.position = 'absolute';
+  text4.style.width = '280px';
+  text4.style.fontFamily = 'Radikal';
+  text4.style.fontSize = '11px';
+  text4.style.top = '15px';
+  text4.style.left = '30px';
+  text4.style.color = 'white'; 
+  text4.style.fontStyle = 'italic';
+  document.body.appendChild(text4);
     
   var box2 = document.createElement('img');
   box2.style.width = '265px';
@@ -178,14 +190,7 @@
   text2.style.color = 'white'; 
   document.body.appendChild(text2);
     
-  var text3 = document.createElement('p')
-  text3.innterHTML = 'System 1 Thinking';
-  text3.style.fontFamily = 'Radikal'
-  text3.style.position = 'absolute';
-  text3.style.top = '150px';
-  text3.style.left = '670px';
-  text3.style.color = 'white'; 
-  document.body.appendChild(text3);
+
     
   var glow = document.createElement('script');
   glow.src = 'https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js';
